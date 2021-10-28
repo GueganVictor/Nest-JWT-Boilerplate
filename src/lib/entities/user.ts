@@ -1,0 +1,10 @@
+import { Document } from 'mongoose';
+
+export interface IUser {
+  password: string;
+  email: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+export type UserDocument = IUser & Document;
